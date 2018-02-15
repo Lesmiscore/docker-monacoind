@@ -41,6 +41,6 @@ RUN apt-get update && \
 COPY --from=build /monacoin/src/monacoind /usr/bin/monacoind
 
 VOLUME /root/.monacoin
-EXPOSE 9252 9253
+EXPOSE 9402
 
 ENTRYPOINT [ "/usr/bin/monacoind" ]
